@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "./app/**/*.ts",
+    "./test/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "files": [
+    "node_modules/angular2/ts/typings/node/node.d.ts",
+    "node_modules/angular2/typings/browser.d.ts",
+    "./app/ts/app.long.ts",
+    "./app/ts/app.ts",
+    "./app/ts/services/ApiService.ts",
+    "./app/ts/vendor.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}

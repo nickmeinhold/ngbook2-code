@@ -1,0 +1,38 @@
+{
+    "version": "1.5.0",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "node_modules/angular2/ts/typings/node/node.d.ts",
+        "node_modules/angular2/typings/browser.d.ts",
+        "./app/ts/app.ts",
+        "./app/ts/components/HomeComponent.ts",
+        "./app/ts/components/products/ByIdComponent.ts",
+        "./app/ts/components/products/InterestComponent.ts",
+        "./app/ts/components/products/MainComponent.ts",
+        "./app/ts/components/products/SportifyComponent.ts",
+        "./app/ts/components/ProductsComponent.ts",
+        "./typings/moment/moment-node.d.ts",
+        "./typings/moment/moment.d.ts",
+        "./typings/tsd.d.ts",
+        "./typings/underscore/underscore.d.ts",
+        "./vendor.ts"
+    ],
+    "compileOnSave": false,
+    "exclude": [],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
