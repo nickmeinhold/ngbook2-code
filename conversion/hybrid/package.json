@@ -1,0 +1,35 @@
+{
+  "name": "ng-hybrid-pinterest",
+  "version": "0.0.1",
+  "description": "toy pinterest clone in ng1/ng2 hybrid",
+  "contributors": [
+    "Nate Murray <nate@fullstack.io>",
+    "Felipe Coury <felipe@ng-book.com>"
+  ],
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rm -f ts/*.js ts/*.js.map ts/components/*.js ts/components/*.js.map ts/services/*.js ts/services.js.map",
+    "tsc": "./node_modules/.bin/tsc",
+    "tsc:w": "./node_modules/.bin/tsc -w",
+    "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
+    "go": "concurrent \"npm run tsc:w\" \"npm run serve\" "
+  },
+  "dependencies": {
+    "angular2": "2.0.0-beta.14",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.6",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "1.0.0",
+    "karma": "0.12.22",
+    "karma-chrome-launcher": "0.1.4",
+    "karma-jasmine": "0.1.5",
+    "live-server": "0.9.0",
+    "typescript": "1.7.3"
+  }
+}

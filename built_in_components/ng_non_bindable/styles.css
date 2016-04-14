@@ -1,0 +1,13 @@
+.bordered {
+  border: 1px dashed black;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.pre {
+  font-family: monospace;
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}

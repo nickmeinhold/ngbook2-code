@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true
+  },
+  "filesGlob": [
+    "./**/*.ts",
+    "./test/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "files": [
+    "node_modules/angular2/ts/typings/node/node.d.ts",
+    "node_modules/angular2/typings/browser.d.ts",
+    "./typings/tsd.d.ts",
+    "./app/ts/app.ts",
+    "./app/ts/components/AboutComponent.ts",
+    "./app/ts/components/ContactComponent.ts",
+    "./app/ts/components/HomeComponent.ts",
+    "./app/ts/components/LoginComponent.ts",
+    "./app/ts/components/ProtectedComponent.ts",
+    "./app/ts/services/AuthService.ts",
+    "./typings/moment/moment-node.d.ts",
+    "./typings/moment/moment.d.ts",
+    "./typings/tsd.d.ts",
+    "./typings/underscore/underscore.d.ts",
+    "./vendor.ts"
+  ],
+  "compileOnSave": false,
+  "exclude": []
+}

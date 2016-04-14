@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ng-book 2: Interest</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sf.css">
+  <link rel="stylesheet" href="css/interest.css">
+</head>
+<body class="container-fullwidth">
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Interest <small>what you're interested in</small></h1>
+
+      <div class="navLinks">
+        <a ui-sref='home' id="navLinkHome">Home</a>
+        <a ui-sref='add' id="navLinkAdd">Add</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <div ui-view=''></div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="node_modules/es6-shim/es6-shim.js"></script>
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/upgrade.dev.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-ui-router.js"></script>
+
+  <!-- Configure System.js, our module loader -->
+  <script>
+    System.config({
+      packages: {        
+        ts: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      },
+      paths: {
+        underscore: './node_modules/underscore/underscore.js',
+        interestAppNg1: './js/app.js'
+      }
+    });
+    System.import('ts/app.js')
+          .then(null, console.error.bind(console));
+  </script>
+
+</body>
+</html>
